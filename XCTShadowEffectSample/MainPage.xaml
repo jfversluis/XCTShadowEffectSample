@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="XCTShadowEffectSample.MainPage">
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="Shadow Effect Sample" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" xct:ShadowEffect.Color="Yellow" xct:ShadowEffect.Opacity="1" />
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10" xct:ShadowEffect.Color="Red" xct:ShadowEffect.OffsetX="5" xct:ShadowEffect.OffsetY="5" />
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0" xct:ShadowEffect.Color="Green" xct:ShadowEffect.Radius="20" Opacity="1" />
         <Label FontSize="16" Padding="30,24,30,0">
             <Label.FormattedText>
                 <FormattedString>
